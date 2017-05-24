@@ -9,8 +9,13 @@
             } )
             .directive('myCustomer', function(){
                 //return directive object
+                //E for element  A for Attribute
                 return {
-                    template:"Name {{customer.name}} address {{customer.address}}"
+                    restict :'E',
+                    scope : {
+                        customerInfo : '=info'
+                    },
+                    template:"Name {{customerInfo.name}} address {{customerInfo.address}}"
 
                 }
 
