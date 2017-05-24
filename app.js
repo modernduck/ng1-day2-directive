@@ -8,7 +8,8 @@
 
                 $scope.customer2 = {
                     name : "Doodle",
-                    address : "Doobe doo be doo"
+                    address : "Doobe doo be doo",
+                    isPrivate:true
                 }
 
                 $scope.customer3 = {
@@ -25,7 +26,7 @@
                     scope : {
                         customerInfo : '=info'
                     },
-                    template:"Name {{customerInfo.name}} address {{customerInfo.address}}"
+                    template:"<div>Name {{customerInfo.name}}</div><div ng-hide='customerInfo.isPrivate'> address {{customerInfo.address}}</div>"
 
                 }
 
