@@ -1,9 +1,19 @@
   angular.module('myApp', [])
             .controller("MainController", function($scope){
              
-                $scope.customer = {
+                $scope.customer1 = {
                     name : "Sompop",
                     address : "Bangkok far far away"
+                }
+
+                $scope.customer2 = {
+                    name : "Doodle",
+                    address : "Doobe doo be doo"
+                }
+
+                $scope.customer3 = {
+                    name : "Doom DOom",
+                    address : "Dooom di doom di doom"
                 }
 
             } )
