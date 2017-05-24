@@ -7,10 +7,7 @@
 <body >
     <section ng-controller="MainController as mainCtrl">
         
-        <my-customer info="customer1"></my-customer>
-        <my-customer info="customer2"></my-customer>
-        <my-customer info="customer3"></my-customer>
-        
+        <customer-list name="customers[0].name" lastname="customers[0].lastname" picture="customers[0].picture" info="customers[0].address" ></customer-list>
     </section>
     <script src="app.js"></script>
 
